@@ -48,3 +48,7 @@ export async function getJavaVersion(): Promise<number> {
 
     return -1;
 }
+
+export async function sleep(msec: number) {
+    return new Promise(resolve => setTimeout(resolve, msec));
+}
